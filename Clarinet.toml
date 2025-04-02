@@ -1,0 +1,29 @@
+[project]
+name = 'Supply-Chain-Traceability-for-Ethical-Sourcing'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.consumer-verification]
+path = 'contracts/consumer-verification.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.labor-certification]
+path = 'contracts/labor-certification.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.supplier-verification]
+path = 'contracts/supplier-verification.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
